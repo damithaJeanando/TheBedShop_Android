@@ -16,9 +16,9 @@ import java.util.List;
 public class ProductAdapter extends ArrayAdapter<Product>{
 
     Context context;
-    List<Product> productList;
+    Product[] productList;
 
-    public ProductAdapter(Context context, int resource, List<Product> products) {
+    public ProductAdapter(Context context, int resource, Product[] products) {
         super(context, resource, products);
         this.context = context;
         this.productList = products;

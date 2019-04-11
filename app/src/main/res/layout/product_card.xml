@@ -26,19 +26,19 @@
             <TextView
                 android:id="@+id/product_name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:text="TextView" />
 
             <TextView
                 android:id="@+id/product_price"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="49dp"
                 android:text="TextView" />
 
             <Button
                 android:id="@+id/add_to_cart_btn"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="95dp"
                 android:text="Button" />
         </LinearLayout>
     </LinearLayout>
