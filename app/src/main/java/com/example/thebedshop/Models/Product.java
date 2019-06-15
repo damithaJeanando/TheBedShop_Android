@@ -1,14 +1,20 @@
 package com.example.thebedshop.Models;
 
-public class Product {
+import java.io.Serializable;
+
+public class Product implements Serializable {
 
     private String productId;
+
     private String name; //product
     private double price;
     private int quantity;
-    private String category;
+    private String categoryId;
     private String description;
     private String image;
+    private Promotion promotion;
+
+    private boolean isActive;
 
     public String getProductId() {
         return productId;
@@ -42,12 +48,12 @@ public class Product {
         this.quantity = quantity;
     }
 
-    public String getCategory() {
-        return category;
+    public String getCategoryId() {
+        return categoryId;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
+    public void setCategoryId(String categoryId) {
+        this.categoryId = categoryId;
     }
 
     public String getDescription() {
@@ -64,5 +70,21 @@ public class Product {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public Promotion getPromotion() {
+        return promotion;
+    }
+
+    public void setPromotion(Promotion promotion) {
+        this.promotion = promotion;
+    }
+
+    public boolean isActive() {
+        return isActive;
+    }
+
+    public void setActive(boolean active) {
+        isActive = active;
     }
 }
