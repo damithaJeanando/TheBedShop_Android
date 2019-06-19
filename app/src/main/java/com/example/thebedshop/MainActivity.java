@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity
             user_name.setText("Sign In");
         }
         Intent intent = getIntent();
-        int catId = intent.getIntExtra("cat_id", -1);
+        int catId = intent.getIntExtra("category", -1);
 
         if(catId != -1){
             keyW = "category/"+catId;
@@ -173,7 +173,7 @@ public class MainActivity extends AppCompatActivity
 
 
         } else if (id == R.id.nav_user) {
-            Intent intent = new Intent(this, LoginActivity.class);
+            Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         }
 

@@ -2,14 +2,14 @@ package com.example.thebedshop.Models;
 
 public class Category {
 
-    public String categoryId;
+    public int categoryId;
     public String categoryName;
 
-    public String getCategoryId() {
+    public int getCategoryId() {
         return categoryId;
     }
 
-    public void setCategoryId(String categoryId) {
+    public void setCategoryId(int categoryId) {
         this.categoryId = categoryId;
     }
 

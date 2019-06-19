@@ -22,7 +22,7 @@ public class CategoryViewActivity extends AppCompatActivity {
         product_list = findViewById(R.id.product_list);
 
         Intent intent = getIntent();
-        int catId = intent.getIntExtra("cat_id", -1);
+        String catId = intent.getStringExtra("cat_id");
 
 //        RequestQueue requestQueue = Volley.newRequestQueue(this);
 //

@@ -56,7 +56,7 @@ public class CategoryListActivity extends AppCompatActivity {
                             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                                 Category category = (Category) listView.getItemAtPosition(position);
                                 Intent intent = new Intent(CategoryListActivity.this, MainActivity.class);
-                                intent.putExtra("cat_id", category.categoryId);
+                                intent.putExtra("category", category.categoryId);
                                 startActivity(intent);
                             }
                         });
