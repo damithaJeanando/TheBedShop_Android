@@ -63,7 +63,8 @@
                     android:id="@+id/btn_decrease_count"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:textColor="@android:color/white" />
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/minus"/>
 
                 <Button
                     android:id="@+id/btn_add_to_cart"
@@ -71,13 +72,15 @@
                     android:layout_height="30dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
-                    android:textColor="@android:color/white" />
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/add_to_cart"/>
 
                 <Button
                     android:id="@+id/btn_increase_count"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:textColor="@android:color/white" />
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/plus"/>
 
                 <TextView
                     android:id="@+id/tx_item_qty"

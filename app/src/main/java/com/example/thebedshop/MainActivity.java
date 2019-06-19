@@ -167,6 +167,10 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_promo) {
 
         } else if (id == R.id.nav_logout) {
+            session.signOut();
+            Intent intent = new Intent(this, LoginActivity.class);
+            startActivity(intent);
+
 
         } else if (id == R.id.nav_user) {
             Intent intent = new Intent(this, LoginActivity.class);
@@ -198,12 +202,12 @@ public class MainActivity extends AppCompatActivity
                     }
                 },
                 new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        System.out.println("Error while fetching products "+error);
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                System.out.println("Error while fetching products "+error);
 
-                    }
-                }
+            }
+        }
         );
 
 

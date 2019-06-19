@@ -83,7 +83,6 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
                     Intent i = new Intent(v.getContext(), ProductDetailsActivity.class);
                     i.putExtra("product", productKey);
                     v.getContext().startActivity(i);
-//                    Toast.makeText(v.getContext(), prod_name.getText(), Toast.LENGTH_SHORT).show();
 
                 }
             });
@@ -196,10 +195,11 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
     }
 
     public void addToCart(){
+
         CartItem cartitem = new CartItem();
         cartitem.setProduct(selectedProduct);
         cartitem.setAmount(1);
-        cartitem.setUserEmail(session.getUserEmail()); // hardcoded to one user.....................................................
+        cartitem.setUserEmail(session.getUserEmail());
 
         Gson gson = new Gson();
         String Jsoncart = gson.toJson(cartitem);
@@ -255,7 +255,8 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
             }
         };
 
-        AppSingleton.getInstance(context).addToRequestQueue(jsonObjectRequest);
+        RequestQueue requestQueue = Volley.newRequestQueue(context);
+        requestQueue.add(jsonObjectRequest);
 
     }
 }
