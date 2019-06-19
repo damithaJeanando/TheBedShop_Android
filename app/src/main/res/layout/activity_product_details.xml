@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ProductDetailsActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="1000dp">
+
+        <ImageView
+            android:id="@+id/prodImgDetail"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/prodNameDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="TextView"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/prodPriceDetail"
+            app:layout_constraintEnd_toEndOf="@+id/prodImgDetail"
+            app:layout_constraintHorizontal_bias="0.075"
+            app:layout_constraintStart_toStartOf="@+id/prodImgDetail"
+            app:layout_constraintTop_toBottomOf="@+id/prodImgDetail"
+            app:layout_constraintVertical_bias="0.8" />
+
+        <TextView
+            android:id="@+id/prodPriceDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="76dp"
+            android:text="TextView"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/prodImgDetail"
+            app:layout_constraintHorizontal_bias="0.066"
+            app:layout_constraintStart_toStartOf="@+id/prodImgDetail"
+            app:layout_constraintTop_toBottomOf="@+id/prodImgDetail"
+            />
+
+        <Button
+            android:id="@+id/addToCartBtnDetail"
+            android:layout_width="358dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Add To Cart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/prodPriceDetail"
+            app:layout_constraintTop_toBottomOf="@+id/prodDescriptionDetail" />
+
+        <TextView
+            android:id="@+id/prodDescriptionDetail"
+            android:layout_width="357dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="@+id/prodImgDetail"
+            app:layout_constraintHorizontal_bias="0.413"
+            app:layout_constraintStart_toStartOf="@+id/prodImgDetail"
+            app:layout_constraintTop_toBottomOf="@+id/prodPriceDetail" />
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/commentsDetail"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="313dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--app:layout_constraintEnd_toEndOf="@+id/prodDescriptionDetail"-->
+            <!--app:layout_constraintHorizontal_bias="1.0"-->
+            <!--app:layout_constraintStart_toStartOf="@+id/prodDescriptionDetail"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/prodDescriptionDetail" />-->
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
